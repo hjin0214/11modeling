@@ -10,6 +10,7 @@
 
 
 <html>
+<title>JENNYSHOP</title>
 <head>
 	<meta charset="EUC-KR">
 	

@@ -43,10 +43,25 @@ a{
 	color: black;
 }
 
+#mainhead{
+	font-size : 23px;
+	font-family: a옛날사진관4;
+	text-align : left;
+}
+
+
+
 h3{
 	color: black;
 	font-size : 40px;
 	font-family: a옛날사진관4;
+}
+
+h4{
+	color: black;
+	font-size : 18px;
+	font-family: a옛날사진관2;
+	line-height:180%;
 }
 
 th{
@@ -55,12 +70,39 @@ th{
 	font-family: a옛날사진관4;
 }
 
+#gettable{
+	color: black;
+	font-size : 18px;
+	font-family: a옛날사진관3;
+}
+
+#content{
+	color: black;
+	font-size : 18px;
+	font-family: a옛날사진관2;
+}
+
 #pricelable{
 	text-align : right;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+#logouttool{
+	font-size : 15px;
+	font-family: a옛날사진관4;
 }
 
+
+.navbar-brand{
+    background-color : pink;
+    font-size : 15px;
+	font-family: a옛날사진관4;
+}
+
+.dropdown{
+    font-size : 18px;
+	font-family: a옛날사진관4;
+}
+
+.panel panel-primary{
+	font-family: a옛날사진관4;
+}

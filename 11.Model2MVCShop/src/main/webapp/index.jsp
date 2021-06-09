@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 
 <html lang="ko">
-	
+<title>JENNYSHOP</title>	
 <head>
 	<meta charset="EUC-KR">
 	
@@ -102,7 +102,7 @@
 		
         <div class="container">
         
-        	<a class="navbar-brand" href="#">JENNYSHOP</a>
+        	<a class="navbar-brand" href="#" style="font-family:a옛날사진관4;">JENNYSHOP</a>
 			
 			<!-- toolBar Button Start //////////////////////// -->
 			<div class="navbar-header">
@@ -117,8 +117,8 @@
 			
 			<div class="collapse navbar-collapse"  id="target">
 	             <ul class="nav navbar-nav navbar-right">
-	                 <li><a href="#">회원가입</a></li>
-	                 <li><a href="#">로 그 인</a></li>
+	                 <li><a href="#" style="font-family:a옛날사진관4;">회원가입</a></li>
+	                 <li><a href="#" style="font-family:a옛날사진관4;">로 그 인</a></li>
 	           	</ul>
 	       </div>
    		
@@ -140,48 +140,43 @@
 		        <br/><br/>
 		       	<!--  회원관리 목록에 제목 -->
 				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<i class="glyphicon glyphicon-heart"></i> 회원관리
+					<div class="panel-heading" style="font-family:a옛날사진관4;">
+						<i class="glyphicon glyphicon-heart" ></i> 회원관리
          			</div>
          			<!--  회원관리 아이템 -->
 					<ul class="list-group">
 						 <li class="list-group-item">
-						 	<a href="#">개인정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#" style="font-family:a옛날사진관4;">개인정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
 						 </li>
 						 <li class="list-group-item">
-						 	<a href="#">회원정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#" style="font-family:a옛날사진관4;">회원정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
 						 </li>
 					</ul>
 		        </div>
                
                
 				<div class="panel panel-primary">
-					<div class="panel-heading">
+					<div class="panel-heading" style="font-family:a옛날사진관4;">
 							<i class="glyphicon glyphicon-briefcase"></i> 판매상품관리
          			</div>
 					<ul class="list-group">
-						 <li class="list-group-item">
-						 	<a href="#">판매상품등록</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 <li class="list-group-item" >
+						 	<a href="#" style="font-family:a옛날사진관4;" >판매상품등록</a> <i class="glyphicon glyphicon-ban-circle"></i>
 						 </li>
 						 <li class="list-group-item">
-						 	<a href="#">판매상품관리</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#" style="font-family:a옛날사진관4;">판매상품관리</a> <i class="glyphicon glyphicon-ban-circle"></i>
 						 </li>
 					</ul>
 		        </div>
                
                
 				<div class="panel panel-primary">
-					<div class="panel-heading">
+					<div class="panel-heading" style="font-family:a옛날사진관4;">
 							<i class="glyphicon glyphicon-shopping-cart"></i> 상품구매
 	    			</div>
 					<ul class="list-group">
-						 <li class="list-group-item"><a href="#">상품검색</a></li>
-						  <li class="list-group-item">
-						  	<a href="#">구매이력조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						  </li>
-						 <li class="list-group-item">
-						 	<a href="#">최근본상품</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
+						 <li class="list-group-item"><a href="http://localhost:8080/product/listProduct?menu=search" style="font-family:a옛날사진관4;">상품검색</a></li>
+						
 					</ul>
 				</div>
 				
@@ -226,8 +221,8 @@
 	</div>
 	
 			  		
-			  		<br/>
-			  		<p style="font-family:나눔바른고딕;"> <p style= "font-size:23px;">로그인 전에는 상품검색만 가능합니다 </p></p>
+			  
+			  		<h4 style="font-family:a옛날사진관3;" align="center"> 로그인 전에는 상품검색만 가능합니다 </h4></p>
 			  		<br/>
 			  		<div class="text-center">
 			  			<a class="btn btn-info btn-lg" href="#" role="button">회원가입</a>

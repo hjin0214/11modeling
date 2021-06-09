@@ -2,10 +2,11 @@
 <%@page import="com.model2.mvc.service.domain.Product"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 
 <html lang="ko">
-	
+<title>JENNYSHOP</title>
 <head>
 	<meta charset="EUC-KR">
 	
@@ -57,33 +58,36 @@
 	<div class="container">
 	
 <br/><br/><br/><br/>
+<div class="page-header text-default">
 <h1 style="font-family:a옛날사진관4;">상품등록</h1>
+</div>
 <br/>
 	<table class="table">	
 		<!-- On rows -->
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;상품명</b></td>
-			<td width="825">&nbsp;&nbsp;${product.prodName}</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;상품명</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.prodName}</td>
 		</tr>
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;상품상세정보</b></td>
-			<td width="825">&nbsp;&nbsp;${product.prodDetail}</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;상품상세정보</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.prodDetail}</td>
 		</tr>
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;제조일자</b></td>
-			<td width="825">&nbsp;&nbsp;${product.manuDate}</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;제조일자</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.manuDate}</td>
 		</tr>
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;가격</b></td>
-			<td width="825">&nbsp;&nbsp;${product.price} 원</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;가격</b></td>
+			<%-- <td id="content" width="825">&nbsp;&nbsp;${product.price} 원</td> --%>
+			<td id="content" width="825">&nbsp;&nbsp;<fmt:formatNumber value="${product.price }" pattern="#,###" />원</td>
 		</tr>	
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;카테고리</b></td>
-			<td width="825">&nbsp;&nbsp;${product.cateName}</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;카테고리</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.cateName}</td>
 		</tr>	
 		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;이미지</b></td>
-			<td width="825">&nbsp;&nbsp;-</td>
+			<td id="gettable" class="success" width="135"><b>&nbsp;&nbsp;이미지</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;-</td>
 		</tr>		
 		
 		<tr>

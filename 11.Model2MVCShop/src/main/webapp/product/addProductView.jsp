@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+<title>JENNYSHOP</title>
 <head>
 
  <meta charset="EUC-KR">
@@ -24,10 +25,12 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
   <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  
+  $(function() {
+		$("#datepicker").datepicker({
+			dateFormat : 'yy-mm-dd'
+		});
+
+	});
   
   </script>
 
@@ -100,15 +103,12 @@ function fncAddProduct(){
 
 <jsp:include page="/layout/toolbar.jsp" />
 
-	<div class="navbar  navbar-default">
-	 <div class="container">
-        	<a class="navbar-brand" href="/index.jsp">JENNYSHOP</a>
-   		</div>
-   	</div>
+	
+   	</br></br></br>
    	
    	<div class="container">
 	
-		<div class="page-header text-default">
+		<div class="page-header text-default"> 
 		
 		<h3 style="text-align:center;">상품 등록</h3> 
 		</div>

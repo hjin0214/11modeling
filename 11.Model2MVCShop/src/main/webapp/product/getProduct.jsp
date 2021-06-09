@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 
 <html lang="ko">
-	
+<title>JENNYSHOP</title>
 <head>
 	<meta charset="EUC-KR">
 	
@@ -57,44 +57,60 @@
 	<div class="container">
 	
 <br/><br/><br/><br/>
-<h1 style="font-family:a옛날사진관4;">상품 상세 조회</h1>
+<div class="page-header text-default">
+<h1 style="font-family:a옛날사진관4;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;상품 상세 조회</h1>
+</div>
 <br/>
-	<table class="table">	
+	<div class="container">
+      		<div class="row">
+			<div class="col-md-4">
+			<img src="/images/uploadFiles/${ product.fileName}" width="380", height="330" />
+			</div>
+			
+		<div class="col-md-1">
+		</div>
+		
+	<div class="col-md-6" >
+	<table class="table" >
+	<br/><br/>
 		<!-- On rows -->
-		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;상품명</b></td>
-			<td width="825">&nbsp;&nbsp;${product.prodName}</td>
+		<tr height="50" >
+			<td id="gettable" class="success" width="280"><b>&nbsp;&nbsp;상품명</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.prodName}</td>
 		</tr>
-		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;상품상세정보</b></td>
-			<td width="825">&nbsp;&nbsp;${product.prodDetail}</td>
+		<tr height="50" >
+			<td id="gettable"class="success" width="280"><b>&nbsp;&nbsp;상품상세정보</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.prodDetail}</td>
 		</tr>
-		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;제조일자</b></td>
+		<tr height="50">
+			<td id="gettable"class="success" width="280"><b>&nbsp;&nbsp;제조일자</b></td>
 			<%-- <td width="825">&nbsp;&nbsp;${product.manuDate}</td> --%>
 			<fmt:parseDate value="${product.manuDate }" var="date" pattern="yyyyMMdd" />
-			<td width="825">&nbsp;&nbsp;<fmt:formatDate value="${date }" pattern="yyyy-MM-dd" /></td>
+			<td id="content" width="825">&nbsp;&nbsp;<fmt:formatDate value="${date }" pattern="yyyy-MM-dd" /></td>
 		</tr>
-		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;가격</b></td>
+		<tr height="50">
+			<td id="gettable"class="success" width="280"><b>&nbsp;&nbsp;가격</b></td>
 			<%-- <td width="825">&nbsp;&nbsp;${product.price} 원</td> --%>
-			<td width="825">&nbsp;&nbsp;<fmt:formatNumber value="${product.price }" pattern="#,###" />원</td>
+			<td id="content" width="825">&nbsp;&nbsp;<fmt:formatNumber value="${product.price }" pattern="#,###" />원</td>
 		</tr>	
-		<tr>
-			<td class="success" width="135"><b>&nbsp;&nbsp;카테고리</b></td>
-			<td width="825">&nbsp;&nbsp;${product.cateName}</td>
+		<tr height="50">
+			<td id="gettable"class="success" width="280"><b>&nbsp;&nbsp;카테고리</b></td>
+			<td id="content" width="825">&nbsp;&nbsp;${product.cateName}</td>
 		</tr>	
-		<tr>
+		<%-- <tr>
 			<td class="success" width="135"><b>&nbsp;&nbsp;</b></td>
 			<img src = "/images/uploadFiles/${ product.fileName }"/>
 			<td width="825">&nbsp;&nbsp;</td>
-		</tr>		
+		</tr>	 --%>	
 		
-		<tr>
-			<td width="135"></td>
+		<tr height="50">
+			<td width="280"></td>
 			<td width="825"></td>
 		</tr>	
 	</table>
+	</div>
+	</div>
+	</div>
 	
 
 	 <div class="form-group">
