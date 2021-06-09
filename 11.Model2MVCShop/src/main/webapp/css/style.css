@@ -1,0 +1,66 @@
+@charset "EUC-KR";
+
+
+a{
+   color: #000000;
+   text-decoration: none;
+}
+
+#contents a{
+   color:#ff8080;
+   display: inline-block;
+   border: 5px solid black;
+   border-radius:20px;
+   padding: 10px 40px;
+   color: inherit;
+}
+
+#categorytext{
+	color: #400080;
+    text-decoration: none;
+    font-size : 18px;
+    font-family: a옛날사진관4;
+}
+
+#categoryselect{
+	color: #ff8000;
+    text-decoration: none;
+    font-size : 20px;
+    font-family: a옛날사진관3;
+}
+
+#pageInfo{
+    font-size : 15px;
+    font-family: a옛날사진관3;
+}
+
+#addprodview{
+ text-align : left;	
+}
+
+#toolbar{
+	background-color: #8a2bd9;
+	color: black;
+}
+
+h3{
+	color: black;
+	font-size : 40px;
+	font-family: a옛날사진관4;
+}
+
+th{
+	color: black;
+	font-size : 20px;
+	font-family: a옛날사진관4;
+}
+
+#pricelable{
+	text-align : right;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CategoryMapper">
+ 	
+ 	
+	<resultMap id="categorySelectMap" type="category">
+		<result property="cateNo" 			column="cateNo" 			jdbcType="NUMERIC" />
+		<result property="cateName" 		column="cateName" 			jdbcType="VARCHAR" />
+	</resultMap>
+	
+	<!-- SQL : SELECT LIST -->
+	<select  id="getCategoryList"  resultMap="categorySelectMap">
+	  	SELECT * FROM category
+	 </select>
+	 
+	<select  id="getCategoryInfo"  parameterType="product" resultMap="categorySelectMap">
+	  	SELECT cateName FROM category
+	  	WHERE cateNo = #{cateNo}
+	 </select>
+	 
+	 
+</mapper>
