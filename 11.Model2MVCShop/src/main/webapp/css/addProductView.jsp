@@ -29,6 +29,7 @@
 		$("#datepicker").datepicker({
 			dateFormat : 'yy-mm-dd'
 		});
+
 	});
   
   </script>
@@ -38,6 +39,8 @@
 <script type="text/javascript" src="../javascript/calendar.js"></script>
 
 <script type="text/javascript">
+
+
 //============= "가입"  Event 연결 =============
 $(function() {
 	//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
@@ -45,6 +48,8 @@ $(function() {
 		fncAddProduct();
 	});
 });	
+
+
 //============= "취소"  Event 처리 및  연결 =============
 $(function() {
 	//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
@@ -52,6 +57,8 @@ $(function() {
 		$("form")[0].reset();
 	});
 });	
+
+
 function fncAddProduct(){
 	//Form 유효성 검증
  	//var name = document.detailForm.prodName.value;
@@ -85,8 +92,11 @@ function fncAddProduct(){
 		alert("가격은 반드시 입력하셔야 합니다.");
 		return;
 	}
+
 	$("form").attr("method" , "POST").attr("action" , "/product/addProduct").submit();
 }
+
+
 </script>
 
 <body>

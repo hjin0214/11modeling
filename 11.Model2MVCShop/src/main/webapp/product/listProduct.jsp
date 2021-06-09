@@ -177,17 +177,17 @@
 			  <td align="left">${ i }</td>
 		
 		<c:if test="${ menu == 'search'}">
-		<td align="left"><a href="/product/getProduct?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a></td>
+		<td id="listtable" align="left"><a href="/product/getProduct?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a></td>
 		</c:if> 
 		<c:if test="${menu == 'manage'}">
-		<td align="left"><a href="/product/updateProduct?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a></td>
+		<td id="listtable" align="left"><a href="/product/updateProduct?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a></td>
 		</c:if>
 	
 			  
 			  
-			  <td align="left">${product.regDate}</td>
-			  <td align="left">${product.cateName}</td>
-			  <td align="right"><fmt:formatNumber value="${product.price }" pattern="#,###" />¿ø</td>
+			  <td id="listtable" align="left">${product.regDate}</td>
+			  <td id="listtable" align="left">${product.cateName}</td>
+			  <td id="listtable" align="right"><fmt:formatNumber value="${product.price }" pattern="#,###" />¿ø</td>
 			</tr>
           </c:forEach>
         

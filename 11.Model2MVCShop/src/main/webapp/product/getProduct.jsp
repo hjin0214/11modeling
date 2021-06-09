@@ -115,9 +115,11 @@
 
 	 <div class="form-group">
 		    <div class="col-sm-offset-4  col-sm-4 text-center">
-		      <button type="button" class="btn btn-success" id="confirm" >확 &nbsp;인</button>
+		      <button class="btn success" id="confirm" >확 &nbsp;인</button>
 		    </div>
 	</div>
+	
+
 
 </body>
 </html>

@@ -92,20 +92,20 @@
 		 	 	<br/><br/>
 				
 				<div class="jumbotron">	 	 	
-		 	 		<h1 class="text-center" style="font-family:나눔바른고딕;">
+		 	 		<h1 class="text-center" style="font-family:a옛날사진관4;">
 		 	 		<i class="glyphicon glyphicon-user"></i> 로 그 인</h1>
 					<br/><br/>
 			        <form class="form-horizontal">
 		  
 					  <div class="form-group">
-					    <label for="userId" class="col-sm-4 control-label" style="font-family:나눔바른고딕;">아 이 디</label>
+					    <label for="userId" class="col-sm-4 control-label" style="font-family:a옛날사진관4;">아 이 디</label>
 					    <div class="col-sm-6">
 					      <input type="text" class="form-control" name="userId" id="userId"  placeholder="아이디" >
 					    </div>
 					  </div>
 					  
 					  <div class="form-group">
-					    <label for="password" class="col-sm-4 control-label" style="font-family:나눔바른고딕;">패 스 워 드</label>
+					    <label for="password" class="col-sm-4 control-label" style="font-family:a옛날사진관4;">패 스 워 드</label>
 					    <div class="col-sm-6">
 					      <input type="password" class="form-control" name="password" id="password" placeholder="패스워드" >
 					    </div>

@@ -59,8 +59,25 @@
 	<div class="container">
       		<div class="row">
 			<div class="col-md-4">
-			<a href="/product/getProduct?prodNo=10001&menu=search">
-			<img src='images/others/bycycle.jpg' width="350", height="200"></a>
+
+<a href="/product/getProduct?prodNo=10001&menu=search">
+<img id="myImg" src="images/others/bycycle.jpg" alt="bycycle" width="350", height="200"></a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+			
+			
 			
 				<h3 id="mainhead"><a href="/product/getProduct?prodNo=10001&menu=search">베스트상품</a></h3>
 				<h4>
@@ -72,7 +89,7 @@
 	
 				<div class="col-md-4">
 				<a href="/product/getProduct?prodNo=10083&menu=search">
-				<img src='images/others/frypan.JPG' width="350", height="200"></a>
+				<img id="myImg" src='images/others/frypan.JPG' width="350", height="200"></a>
 				<h3 id="mainhead"><a href="/product/getProduct?prodNo=10083&menu=search">함께해서 더 좋은 세트상품</a></h3>
 				<h4>
 				두 가지 상품을 가장 합리적인 가격에 만날 <br/>수 있는 1+1 세트상품으로
@@ -82,7 +99,7 @@
 	
 				<div class="col-md-4">
 				<a href="/product/getProduct?prodNo=10000&menu=search">
-				<img src='images/others/notbook.jpg' width="350", height="200"></a>
+				<img id="myImg" src='images/others/notbook.jpg' width="350", height="200"></a>
 				<h3 id="mainhead"><a href="/product/getProduct?prodNo=10000&menu=search">런칭 후 7일간, 신상품 10% 할인</a></h3>
 				<h4>JENNYSHOP 2021 여름 신상품을 할인된 <br/>가격에 만나보세요. 신상품은
 				런칭 후 7일간 10% 할인된 가격에 판매됩니다. 이번 여름을 함께할 새롭고 다양한
